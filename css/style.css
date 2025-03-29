@@ -1,37 +1,108 @@
-h1 /* Format h1 element */
+/* General */
+body
 {
-    font-size: 40px;
-    color: #7f0d9c;
-} /* Format p element */
+    background-color: rgba(142, 204, 255, 0.504);
+    font-family: Arial;
+}
+h1 
+{ 
+    font-size: 40px; 
+    color: #7f0d9c; 
+    padding-left: 30px; /* Align heading to ensure it isn't too close to border */
+}
+h2
+{
+    font-size: 30px;
+    margin: 80px auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
 p 
 { 
-font-size: 30px; 
-font-family: Arial, Helvetica, sans-serif;
-color: darkgreen; 
-} 
-div /* Add customised borders around each division */
-{
+    font-size: 20px; 
+    font-family: Arial;
+    color: darkgreen; 
+    line-height: 1.2; /* Thicken spacing between paragraph lines */
+}
+img 
+{ 
+    max-width: 50%; 
+    height: auto; 
+    display: block; 
+    margin: 10px auto; 
+    border-radius: 4px; 
+}
 
-    border: 5px outset black;
+/* Navigation Bar */
+nav 
+{
+    position: fixed; /* Fixed ensures nav is always displayed while scrolling up or down */
+    top: 0; 
+    left: 0;
+    width: 100%; /* Percentage ensures navigation is always stretched for any screen size and mobile devices */
+
+    /* Padding adjusts the space between inner border and contents inside */
+    padding: 20px 10px; /* First value sets space between top and bottom; second value sets space between left and right. */
+    z-index: 1000; /* Set nav to always be 1000 degrees at top if overlayed by other contents */
+    background-color: rgba(184, 184, 184, 0.381); /* Set navigation colour */
+    box-shadow: 100 100px 100px black; /* Add a box shadow colour */
+}
+nav ul
+{
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Reset padding back to 0 to prevent different web browsers interfer with code */
+    margin: 0; /* Reset margin back to 0 */
+    display: flex; /* Adjust display to be responsive to different to different page screens */
+    justify-content: center; /* Position nav to always be in middle */
+    align-items: center; /* Align contents inside the nav to middle */
+}
+nav li 
+{ 
+    margin: 0; /* Reset listed item margins back to 0 */ 
+}
+nav a 
+{ 
+    font-family: Arial; 
+    font-size: 20px;
+    color:#ff8c00;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 5px;
+    position: relative;
+}
+nav a:hover /* Hover events */
+{
+    color: white; /* Change text colour when cursor hovers over */
+    border-bottom: black;
+}
+
+/* Divisions */
+div
+{
+    border: 5px outset black; /* Set border thickness and outset black */
+    border-radius: 20px; /* Curve border corners */
     padding: 30px;
     margin: 10px;
     background-color: rgb(255, 220, 188);
-} /* Add unique styling to custom divs */
-#paragraph_1
-{
-    background-color: rgb(225, 194, 255);
 }
-#paragraph_2
-{
-    background-color: rgb(255, 189, 189);
-} /* Format unique id aqua_text */
-#aqua_text
-{
-    font-size: 30px;
-    color: aqua;
-} /* Create custom class greyClass */
+
+/* Classes */
 .greyClass
-{
-    border: 5px outset black;
-    background-color: rgba(255, 238, 238, 0.409);
+{ 
+    border: 5px outset black; /* Set border thickness and outset black */
+    border-radius: 20px; /* Curve border corners */
+    background-color: rgba(155, 155, 155, 0.409); 
+}
+
+/* Unique ids */
+#paragraph_1 
+{ 
+    background-color: rgb(225, 194, 255); 
+}
+#paragraph_2 
+{ 
+    background-color: rgb(255, 189, 189); 
+}
+#aqua_text 
+{ 
+    font-size: 20px; color: rgb(81, 0, 255); 
 }

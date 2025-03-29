@@ -6,34 +6,38 @@
 
         <!--Import style.css into page-->
         <link rel="stylesheet", href="css/style.css">
-        <style> /* Customise with internal CSS */
-            img /* Make image responsive */
-            {
-                max-width: 50%;
-                height: auto;
-                display: block;
-                margin: 10px auto;
-                border-radius: 4px;
-            } 
-        </style>
     </head>
     <body>
-        <h1>Title Heading 1</h1>
-        <div> <!--Divide-->
-            <a href="https://en.wikipedia.org/wiki/Urban_forest">
-            <img src="images/urban_nature.jpg", alt="This is a high-contrast image of urban nature.">
-        </a>
-        </div>
-        <br> <!--Add new line to separate division borders-->
-        <div id="paragraph_1"> <!--Divide using custom id-->
-            <p>
-                This is a website paragraph for a future website that is in progress. It will soon feature HTML, CSS and JavaScript client-side 
-                and server-side programming such as PHP. Welcome to the homepage of my website. This is a description located in the body tags 
-                of the webpage.
-            </p>
-        </div>
+        <nav> <!--Create navigation-->
+            <ul>
+                <li><a href="#home">Homepage</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="#misc">Misc</a></li>
+            </ul> 
+        </nav>
+        <section class="greyClass"> <!--Section using public class-->
+            <h1>Home Page</h1>
+            <div> <!--Divide-->
+                <a href="https://en.wikipedia.org/wiki/Urban_forest", target="_blank">
+                <img src="images/urban_nature.jpg", alt="This is a high-contrast image of urban nature.">
+            </a>
+            </div>
+            <br> <!--Add new line to separate division borders-->
+            <div id="paragraph_1"> <!--Divide using custom id-->
+                <h2>Introduction</h2>
+                <p> <!--Add paragraph-->
+                    This is a website paragraph for a future website that is in progress. It will soon feature HTML, CSS and JavaScript client-side 
+                    and server-side programming such as PHP. Welcome to the homepage of my website. This is a description located in the body tags 
+                    of the webpage.
+                </p>
+            </div>
+        </section>
+        
         <br> <!--Add new line to separate division borders-->
         <div id="paragraph_2"> <!--Divide using custom id-->
+            <h2>Overview</h2>
             <p id="aqua_text"> <!--Add paragraph using custom id aqua_text-->
                 This is a website paragraph for a future website that is in progress. It will soon feature HTML, CSS and JavaScript client-side 
                 and server-side programming such as PHP. Welcome to the homepage of my website. This is a description located in the body tags

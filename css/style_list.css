@@ -1,0 +1,20 @@
+/* -- Unused style sheet -- */
+
+/* GENERAL */
+h1 { font-size: 40px; color: #7f0d9c; }
+p { font-size: 30px; font-family: Arial, Helvetica, sans-serif; color: darkgreen; }
+img { max-width: 50%; height: auto; display: block; margin: 10px auto; border-radius: 4px; }
+
+/* NAVIGATION BAR */
+nav { font-size: 30px; color:rgb(4, 0, 255); }
+
+/* DIVISIONS */
+div { border: 5px outset black; padding: 30px; margin: 10px; background-color: rgb(255, 220, 188); }
+
+/* CLASSES */
+.greyClass { border: 5px outset black; background-color: rgba(255, 238, 238, 0.409); }
+
+/* UNIQUE IDS */
+#paragraph_1 { background-color: rgb(225, 194, 255); }
+#paragraph_2 { background-color: rgb(255, 189, 189); }
+#aqua_text { font-size: 30px; color: aqua; }
