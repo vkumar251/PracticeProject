@@ -29,7 +29,7 @@
             }
             .nav-container
             {
-                background-color: rgb(0, 255, 0);
+                background-color: rgb(0, 100, 0);
                 padding: 1rem 0;
                 position: sticky;
                 top: 0;
@@ -112,22 +112,23 @@
             }
             h2
             {
-                color: grey;
+                color: rgb(82, 82, 82);
                 margin-bottom: 1rem;
                 font-size: 1.8rem;
             }
 
             /* Text Formatting */
+            em
+            {
+                color: rgb(201, 0, 167);
+                font-weight: 600;
+                font-style: italic;
+            }
             .highlight
             {
                 background-color: gold;
                 padding: 0.2rem 0.5rem;
                 border-radius: 4px;
-            }
-            em
-            {
-                color: blueviolet;
-                font-style: italic;
             }
             .email
             {
@@ -143,6 +144,22 @@
                 background-color: rgb(159, 159, 255);
                 color: white;
                 margin-top: 2rem;
+            }
+            .footer p
+            {
+                color: black; 
+                padding-bottom: 10px; 
+                text-align: left;
+            }
+            .footer ul a
+            {
+                text-decoration: none;
+                color: blue;
+            }
+            .footer ul a:hover
+            {
+                text-decoration: underline;
+                color: aqua;
             }
         </style>
     </head>
@@ -183,10 +200,10 @@
                     <section> <!--Services-->
                         <h2>Our Services</h2>
                         <ol>
-                            <li>Front-end Web Development - HTML, CSS, JavaScript</li>
+                            <li><em>Front-end Web Development - HTML, CSS, JavaScript</em></li>
                             <li>Back-end Web Development - PHP, Node.js, Rust</li>
                             <li>OOP Software Engineer - Java, Python, C#, Ruby</li>
-                            <li>SQL Database Management</li>
+                            <li>SQL Database Developer</li>
                         </ol>
                     </section>
                 </div>
@@ -194,15 +211,18 @@
                     <section> <!--Contact-->
                         <aside>
                             <h2>Contact Us</h2>
-                            <article>Email: <div class="highlight">info@example.com </div></article>
+                            <article>
+                                <div class="email">Email:</div> 
+                                <div class="highlight">info@example.com</div>
+                            </article>
                         </aside>
                     </section>
                 </div>
             </div>
         </main>
         <footer>
-            <p>&copy; 2025. All rights reserved.</p>
             <nav class="footer">
+                <p>&copy; 2025. All rights reserved.</p>
                 <ul>
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
