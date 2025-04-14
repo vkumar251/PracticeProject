@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=service-width, initial-scale=1.0">
+        <title>Index Page 1</title>
+        <style>
+            /* Page Setup */
+            *
+            {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body
+            {
+                font-family: Arial;
+                line-height: 1.6;
+                background-color: rgba(0, 255, 179, 0.452);
+            }
+
+            /* Navigation */
+            nav ul
+            {
+                display: flex;
+                gap: 1rem;
+                list-style: none;
+            }
+            .nav-container
+            {
+                background-color: rgb(0, 255, 0);
+                padding: 1rem 0;
+                position: sticky;
+                top: 0;
+            }
+            .main-nav ul
+            {
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+            }
+            .main-nav a
+            {
+                color: white;
+                text-decoration: none;
+                padding: 0.5rem 1rem;
+                transition: color 0.3s ease;
+            }
+            .main-nav a:hover
+            {
+                color: black;
+            }
+
+            /* Header Styling */
+            header
+            {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 1rem;
+            }
+            header img
+            {
+                width: 100px;
+                height: 100px;
+                display: flex;
+            }
+            .header
+            {
+                text-align: center;
+                padding: 3rem 1rem;
+                background-color: purple;
+                margin-bottom: 2rem;
+            }
+            .header h1
+            {
+                color: grey;
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+            }
+            .subtitle
+            {
+                color: white;
+                font-size: 1.2rem;
+                text-align: left;
+                font-weight: 800;
+                padding-bottom: 20px;
+            }
+
+            /* Main Content Styling */
+            main
+            {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                gap: 2rem;
+            }
+            .main-content
+            {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 0 1rem;
+            }
+            .about-section, .services-section, .contact-section
+            {
+                background-color: white;
+                padding: 2rem;
+                margin-bottom: 2rem;
+                border-radius: 8px;
+                box-shadow: 0 2px 4px red;
+            }
+            h2
+            {
+                color: grey;
+                margin-bottom: 1rem;
+                font-size: 1.8rem;
+            }
+
+            /* Text Formatting */
+            .highlight
+            {
+                background-color: gold;
+                padding: 0.2rem 0.5rem;
+                border-radius: 4px;
+            }
+            em
+            {
+                color: blueviolet;
+                font-style: italic;
+            }
+            .email
+            {
+                color: darkgreen;
+                font-weight: bold;
+            }
+
+            /* Footer Styling */
+            .footer
+            {
+                text-align: center;
+                padding: 2rem;
+                background-color: rgb(159, 159, 255);
+                color: white;
+                margin-top: 2rem;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="header">
+                <h1>Welcome to my website.</h1>
+                <img src="images/skyline.png", alt="Picture of skyline of a city."> <!--Sample logo-->
+                <div class="subtitle">Useful Links:</div>
+                <nav class="nav-container"> <!--Navigation-->
+                    <div class="main-nav">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#faq">FAQ</a></li>
+                            <li><a href="#terms">Terms & Conditions</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#careers">Careers</a></li>
+                            <li><a href="#sitemap">Sitemap</a></li>
+                            <li><a href="#accessibility">Accessibility</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="main-content">
+                <div class="about-section">
+                    <section> <!--About-->
+                        <h2>About Us</h2>
+                        <article>This is a paragraph about our company.</article>
+                    </section>
+                </div>
+                <div class="services-section">
+                    <section> <!--Services-->
+                        <h2>Our Services</h2>
+                        <ol>
+                            <li>Front-end Web Development - HTML, CSS, JavaScript</li>
+                            <li>Back-end Web Development - PHP, Node.js, Rust</li>
+                            <li>OOP Software Engineer - Java, Python, C#, Ruby</li>
+                            <li>SQL Database Management</li>
+                        </ol>
+                    </section>
+                </div>
+                <div class="contact-section">
+                    <section> <!--Contact-->
+                        <aside>
+                            <h2>Contact Us</h2>
+                            <article>Email: <div class="highlight">info@example.com </div></article>
+                        </aside>
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; 2025. All rights reserved.</p>
+            <nav class="footer">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#terms">Terms & Conditions</a></li>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                    <li><a href="#sitemap">Sitemap</a></li>
+                    <li><a href="#accessibility">Accessibility</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </body>
+</html>
